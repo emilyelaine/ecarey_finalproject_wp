@@ -20,10 +20,10 @@
             
         <div class="social_links">
             <ul class="social_nav">
-                <li><a href="#"><img src="img/facebookicon.png" alt="facebook icon"></a></li>
-                <li><a href="#"><img src="img/twittericon.png" alt="twitter icon" ></a></li>
-                <li><a href="#"><img src="img/instagramicon.png" alt="instagram icon"></a></li>
-                <li><a href="#"><img src="img/youtubeicon.png" alt="youtube icon"></a></li>
+                <li><a href="#"><img src="http://10000lakes-sanctuary.emilyecarey.com/wp-content/uploads/2015/04/facebookicon.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="http://10000lakes-sanctuary.emilyecarey.com/wp-content/uploads/2015/04/twittericon.png" alt="twitter icon" ></a></li>
+                <li><a href="#"><img src="http://10000lakes-sanctuary.emilyecarey.com/wp-content/uploads/2015/04/instagramicon.png" alt="instagram icon"></a></li>
+                <li><a href="#"><img src="http://10000lakes-sanctuary.emilyecarey.com/wp-content/uploads/2015/04/youtubeicon.png" alt="youtube icon"></a></li>
                 
             </ul>
         </div>
