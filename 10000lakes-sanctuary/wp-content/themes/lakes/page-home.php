@@ -18,7 +18,7 @@ Template Name: Home Page
 
 get_header(); ?>
 
-	<div id="primary" class="content-area" class="site-wrap">
+	<div id="primary" class="content-area">
 		<main id="home-page" class="site-main" role="main">
 		<div class="main-background">
 		<ul class="slideshow">	
@@ -28,6 +28,7 @@ get_header(); ?>
 			if( have_rows('main_slider') ):
 
  			// loop through the rows of data
+   			$count = 1;
    			while ( have_rows('main_slider') ) : the_row();
 
        		// display a sub field value
@@ -47,8 +48,8 @@ get_header(); ?>
     				</div>	
     			</div>
     		</li>
-    	<?php	
-   		 endwhile;
+    	 <?php $count++; ?>	
+   		 <?php endwhile;
 
 		else :
 

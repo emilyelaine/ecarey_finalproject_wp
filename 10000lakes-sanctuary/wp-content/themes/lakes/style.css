@@ -54,15 +54,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	font-weight: normal;  
 }
 
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
-  .nav-trigger,label {display:none;}
-  .nav-item,figure {width:20%}
-  .site-wrap {min-width:80%;float:right;}
-  figure img {
-  width: 150px;
-}
 
 html {
 	font-family: sans-serif;
@@ -540,14 +531,14 @@ textarea {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
-div.site-title	{
-	width: 100%;
-	border-bottom: solid 2px #CACAD9;
-}
+ 
 
 div #site-description	{
 	width: 100%;	
+}
+
+div.site-branding	{
+	clear: both;
 }
 
 h1, header h2 {
@@ -564,6 +555,7 @@ header h2	{
 h1 a, h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
 	text-decoration: none;
 	color: #525261;
+
 }
 
 
@@ -571,89 +563,72 @@ h1 a, h1 a:hover, h1 a:visited, h1 a:link, h1 a:active {
 # Navigation
 --------------------------------------------------------------*/
 
-/* Navigation Menu - Background */
-.navigation {
-  width: 200px;
-  height: 100%;
-  position: fixed;
-  top: 50;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  list-style: none;
-  background-color: #525261;
-  color: #fff;
+nav	{
+	text-align: center;
+	height: 34px;
+	border-bottom: 2px solid #CACAD9;
 }
 
-li.nav-item, li ul li.nav-item {
-  width: 170px;
-  border-top: 1px solid #525261;
-  border-bottom: 1px solid #525261;
-  list-style: none;
+nav ul {
+	list-style: none;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
 }
 
-li.nav-item a, li ul li.nav-item a {
-  display: block;
-  padding: 7px;
-  background-color: #525261;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color 0.2s, background 0.5s;
+nav ul a	{
+	display: block;
+	color: #525261;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 32px;
+	padding: 0 15px;
 }
 
-li.nav-item a:hover, li ul li.nav-item a:hover {
-  color: #525261;
-  background-color: #fff;
-  border-top: 1px solid #525261;
-  border-bottom: 1px solid #525261;
+nav ul li	{
+	position: relative;
+	float: left;
+	width: 150px;
+	margin: 0;
+	padding: 0;
 }
 
-.site-wrap {
-  min-height: 100%;
-  min-width: 100%;
-  background-color: #fff; 
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 6;
-  padding: 4em;
-  background-size: 200%;
+nav ul li.current-menu-item	{
+	background: #ddd;
 }
 
-.nav-trigger {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
+nav ul li:hover	{
+	background: #E8FFBE;
 }
 
-label[for="nav-trigger"] {
-  position: fixed;
-  left: 15px; top: 35px;
-  z-index: 7;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
-  background-size: contain;
+
+nav ul ul	{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	padding: 0;
 }
 
-.nav-trigger + label, .site-wrap {
-  transition: left 0.2s;
+nav ul ul li	{
+	float: none;
+	width: 150px;
 }
 
-.nav-trigger:checked + label {
-  left: 215px;
+nav ul ul a	{
+	line-height: 120%;
+	padding: 10px 15px;
 }
 
-.nav-trigger:checked ~ .site-wrap {
-  position: relative;
-  left: 200px;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+
+nav ul li:hover > ul	{
+	display: block;
 }
 
-body {
-  overflow-x: hidden;
+nav a, nav a:visited, nav a:active	{
+	color: #525261;
 }
 
 
@@ -701,15 +676,27 @@ main#home-page	{
 
 div.about_section h3	{
 	text-align: center;
-	width: 100%
+	width: 100%;
 	font-weight: 100;
 }
 
 div.about_section p	{
-	width: 75%;
+	width: 95%;
 	margin-right: auto;
 	margin-left: auto;
 }
+
+div.about_section	{
+	position: relative;
+	top: -100px;
+}
+
+div.content-area	{
+	width: 90%;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}	
 
 /*--------------------------------------------------------------
 ## Links
@@ -879,7 +866,6 @@ div.slider_description h2	{
 	position: relative;
 	top: -450px;
 	left: 19%;
-	width: 60%;
 	background-color: hsla(0, 100%, 100%, 0.75);
 	padding: 5px 10px;
 }
@@ -890,13 +876,29 @@ div.slider_description p	{
 	left: 19%;
 	background-color: hsla(0, 0%, 93%, 0.65);
 	padding: 5px;
-	width: 32%;
 }
 
-div.bx-controls bx-has-pager	{
+div.group1 h2	{
+	width: 57%;	
+}
+
+div.group2 h2	{
+	width: 40%;	
+}
+
+div.group3 h2	{
+	width: 26%;	
+}
+
+div.group p	{
+	width: 30%
+}
+
+div.bx-controls, div.bx-has-pager	{
 	list-style: none;
 	z-index: -5;
 	position: relative;
+	visibility: hidden;
 }
 
 
@@ -1027,6 +1029,7 @@ footer	{
 	border-top: solid 2px #CACAD9;
 	clear: both;
 	height: auto;
+	position: relative;
 }
 
 footer h3	{
@@ -1037,13 +1040,13 @@ footer div.contact	{
 	float: left;
 	width: 30%;
 	margin-top: 15px;
-	margin-left: 30px;
+	margin-left: 10%;
 }
 footer div.social_links	{
 	float: right;
 	text-align: right;
 	margin-top: 70px;
-	margin-right: 15%;
+	margin-right: 10%;
 }
 
 footer p.copyright	{

@@ -143,6 +143,9 @@ add_action( 'widgets_init', 'lakes_widgets_init' );
  */
 function lakes_scripts() {
 	wp_enqueue_script('jquery');
+	
+	wp_enqueue_style( 'lake-style', get_stylesheet_uri() );
+	
 	wp_enqueue_script('kickstart', get_template_directory_uri() . '/js/kickstart.js', array('jquery'), ' ', true);
 	
 	wp_enqueue_style( 'lakes-style', get_stylesheet_uri() );

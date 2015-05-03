@@ -31,7 +31,6 @@
         <p class="copyright">10,000 Lakes Sanctuary, 2015 &copy;</p>
 		
 	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 </body>

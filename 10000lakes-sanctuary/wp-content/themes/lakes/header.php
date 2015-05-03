@@ -20,29 +20,27 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'lakes' ); ?></a>
-	
+		<header id="masthead" class="site-header" role="banner">
+		
 		<nav class="main-navigation" role="navigation">
-			<ul id="site-navigation" class="navigation" class="main-navigation" role="navigation">
-            	<li class="nav-item"><a href="../../">Home</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="../">Resident Animals</a>
+			<ul id="site-navigation" class="navigation">
+            	<li class="current_menu_item"><a href="../../">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="../">Resident Animals</a>
                 	<ul>
-                    	<li class="nav-item"><a href="#">Great Blue Heron</a></li>
-                        <li class="nav-item"><a href="#">Beaver</a></li>
-                        <li class="nav-item"><a href="#">Eastern Gray Squirrel</a></li>
-                        <li class="nav-item"><a href="#">Mallard</a></li>
-                        <li class="nav-item"><a href="#">Red Fox</a></li>
-                        <li class="nav-item"><a href="#">Snapping Turtle</a></li>
+                    	<li><a href="http://10000lakes-sanctuary.emilyecarey.com/great-blue-heron">Great Blue Heron</a></li>
+                        <li><a href="#">Beaver</a></li>
+                        <li><a href="#">Eastern Gray Squirrel</a></li>
+                        <li><a href="#">Mallard</a></li>
+                        <li><a href="#">Red Fox</a></li>
+                        <li><a href="#">Snapping Turtle</a></li>
                     </ul></li>
-                <li class="nav-item"><a href="#">Volunteer</a></li>
-                <li class="nav-item"><a href="#">Visit</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li><a href="#">Visit</a></li>
+                <li><a href="#">In Our Care - Blog</a></li>
             </ul>
-            
-            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-			<label for="nav-trigger"></label>
 		</nav><!-- #site-navigation -->
 	
-		<header id="masthead" class="site-header" role="banner" class="site-wrap">
 		<div class="site-branding">
 			<div class="site-title">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
