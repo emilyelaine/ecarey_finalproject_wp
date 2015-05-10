@@ -29,9 +29,10 @@
         </div>
         
         <p class="copyright">10,000 Lakes Sanctuary, 2015 &copy;</p>
+	
 		
 	</footer><!-- #colophon -->
-
+	
 <?php wp_footer(); ?>
 </body>
 </html>

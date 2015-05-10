@@ -22,11 +22,11 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'lakes' ); ?></a>
 		<header id="masthead" class="site-header" role="banner">
 		
-		<nav class="main-navigation" role="navigation">
+		<nav class="main-navigation nav-collapse" role="navigation">
 			<ul id="site-navigation" class="navigation">
             	<li class="current_menu_item"><a href="../../">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="../">Resident Animals</a>
+                <li><a href="http://10000lakes-sanctuary.emilyecarey.com/resident-animals/">Meet the Animals</a>
                 	<ul>
                     	<li><a href="http://10000lakes-sanctuary.emilyecarey.com/great-blue-heron">Great Blue Heron</a></li>
                         <li><a href="#">Beaver</a></li>
